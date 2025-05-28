@@ -32,8 +32,8 @@ let pricingCollection
 // Connect and run
 async function run() {
   try {
-    await client.connect();
-    console.log("Connected to MongoDB Atlas!");
+    // await client.connect();
+    // console.log("Connected to MongoDB Atlas!");
 
     const db = client.db("nexthire");
 
@@ -187,7 +187,7 @@ app.post('/employers/register', async (req, res) => {
     const result = await employersCollection.insertOne(employer);
     res.status(201).send(result);
   } catch (error) {
-    console.error("❌ Error registering employer:", error);
+    console.error("Error registering employer:", error);
     res.status(500).send({ error: "Employer registration failed" });
   }
 });
