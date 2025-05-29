@@ -520,6 +520,7 @@ app.post('/views/:jobId', async (req, res) => {
   }
 });
 
+
 // <----------Route to update a specific job by its ID--------->
 app.patch("/jobs/:id", async (req, res) => {
   const { id } = req.params;
@@ -549,6 +550,7 @@ app.patch("/jobs/:id", async (req, res) => {
     res.status(500).send({ message: "Failed to update job" });
   }
 });
+
 
 
 // <----------delate job by ID--------->
