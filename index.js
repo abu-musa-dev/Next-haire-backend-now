@@ -332,6 +332,7 @@ app.get('/applications/by-poster', async (req, res) => {
 });
 
 
+
 //--------------------------
 // PATCH: Update status of an application
 app.patch('/applications/:id/status', async (req, res) => {
@@ -358,6 +359,7 @@ app.patch('/applications/:id/status', async (req, res) => {
     res.status(500).json({ error: "Failed to update status" });
   }
 });
+
 
 // <----------Route to delete a specific job application by its ID--------->
 
