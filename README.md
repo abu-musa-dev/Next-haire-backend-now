@@ -1,40 +1,37 @@
 # 🧩 NextHire – Backend API
 
-This is the **backend** for **NextHire**, a full-stack job portal web app connecting job seekers and employers. It is built using **Node.js**, **Express.js**, **MongoDB**, and includes secure RESTful APIs, role-based access, and Stripe integration for payments.
+This is the **backend** for **NextHire**, a full-stack job portal web application that connects job seekers and employers. Built with **Node.js**, **Express.js**, and **MongoDB**, it provides secure RESTful APIs, role-based access control, and Stripe payment integration.
+
+**Live Site (Frontend)**: [https://next-hire-web.netlify.app](https://next-hire-web.netlify.app)
 
 ---
 
 ## 📦 Features
 
-- 📄 **RESTful API** for managing jobs, applications, users, and roles
-- 🔐 **Role-Based Access Control (RBAC)** for Admin, Employer, and Job Seeker
-- 💳 **Stripe Integration** for payment functionality
-- 🌐 **CORS-enabled** and connected to React frontend
-- 🔍 Filterable endpoints for jobs and applicants
-- 📬 Clean error handling and status responses
+- **RESTful API** for managing jobs, applications, users, and roles
+-  **Role-Based Access Control (RBAC)** – Admin, Employer, and Job Seeker
+-  **Stripe Integration** for handling payments
+-  **CORS-enabled** and fully connected to the frontend
+-  Filter and search functionality for jobs and applicants
+- Clean error handling and status-based responses
 
 ---
 
-## 🔧 Technologies Used
+## 🛠️ Technologies Used
 
-| Category         | Tools / Libraries           |
-|------------------|-----------------------------|
-| Runtime          | Node.js                     |
-| Framework        | Express.js                  |
-| Database         | MongoDB + Mongoose          |
-| Auth & Roles     | Firebase Authentication (frontend) + role middleware |
-| Payment Gateway  | Stripe                      |
-| API Handling     | Axios (frontend) + Express Routes |
-| Environment      | dotenv                      |
-| Security         | CORS, helmet, express-rate-limit |
-| Validation       | Express Validator / Mongoose |
+- **Runtime**: Node.js  
+- **Framework**: Express.js  
+- **Database**: MongoDB + Mongoose  
+- **Authentication**: Firebase Auth (handled on frontend)  
+- **Payment**: Stripe API  
+- **Environment Management**: dotenv  
+- **Deployment**: Vercel / Render
 
 ---
 
-## 🛠️ API Endpoints
+## ▶️ Getting Started
 
-### 🔐 Auth (handled in frontend via Firebase)
-
-Roles and user data are stored in MongoDB after login.
-
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/NextHire-Backend.git
+   cd NextHire-Backend
