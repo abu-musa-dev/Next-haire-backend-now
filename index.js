@@ -461,6 +461,7 @@ app.delete("/jobs/:id", async (req, res) => {
 });
 
 
+
 // <----------Route to update the status of a specific job--------->
 app.patch("/jobs/:id/status", async (req, res) => {
   const { id } = req.params;
