@@ -254,6 +254,7 @@ app.get("/services", async (req, res) => {
 });
 
 
+
 // <----------Route to create a new job application--------->
 app.post('/applications', async (req, res) => {
   try {
