@@ -421,6 +421,7 @@ app.get('/jobs/:id', async (req, res) => {
 });
 
 
+
 // <----------Route to create a new job--------->
 app.post("/jobs", async (req, res) => {
   const job = req.body;
