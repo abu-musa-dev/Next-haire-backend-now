@@ -412,6 +412,7 @@ app.get('/jobs', async (req, res) => {
 });
 
 
+
 // <----------Route to get a specific job by its ID--------->
 app.get('/jobs/:id', async (req, res) => {
   const id = req.params.id;
