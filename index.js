@@ -8,9 +8,9 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
 app.use(cors());
 app.use(express.json());
-
 
 
 // MongoDB URI
@@ -20,6 +20,7 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 });
 
+
 // Global collections
 let jobsCollection;
 let applicationsCollection;
@@ -28,6 +29,7 @@ let employersCollection;
 let freelancers;
 let servicesCollection;
 let pricingCollection
+
 
 // Connect and run
 async function run() {
