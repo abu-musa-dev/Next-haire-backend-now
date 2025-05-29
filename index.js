@@ -441,6 +441,7 @@ app.post("/jobs", async (req, res) => {
 });
 
 
+
 // <----------Route to delete a specific job by its ID--------->
 app.delete("/jobs/:id", async (req, res) => {
   const { id } = req.params;
