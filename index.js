@@ -132,6 +132,8 @@ app.get('/dashboard', verifyToken, (req, res) => {
     res.status(403).send("Access forbidden: insufficient permissions.");
   }
 });
+
+
 // ------------- jobseekers Registration -----------------
 
 app.post('/jobseekers/register', async (req, res) => {
