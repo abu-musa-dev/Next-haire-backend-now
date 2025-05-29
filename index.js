@@ -392,6 +392,7 @@ app.delete("/applications/:id", async (req, res) => {
 });
 
 
+
 // <----------Route to get all jobs--------->
 app.get('/jobs', async (req, res) => {
   try {
