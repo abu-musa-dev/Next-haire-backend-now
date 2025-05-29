@@ -331,6 +331,7 @@ app.get('/applications/by-poster', async (req, res) => {
   }
 });
 
+
 //--------------------------
 // PATCH: Update status of an application
 app.patch('/applications/:id/status', async (req, res) => {
