@@ -287,6 +287,7 @@ app.post('/applications', async (req, res) => {
 });
 
 
+
 // <----------Route to get all job applications--------->
 app.get('/applications', async (req, res) => {
   try {
